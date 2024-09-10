@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@
   --orange: #ed8e00;
   --lightOrange: #f18128;
   --blk: #000;
+  --grey: #c8c8c8;
 }
 
 body {
@@ -32,4 +34,29 @@ body {
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  background: var(--lightOrange);
+  height: 45px;
+  width: 166px;
+  font-family: var(--R);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blk);
+  border-radius: 4px;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background: var(--bg);
+    color: var(--w);
+  }
+}
+@media (hover: none) {
+  .btn:active {
+    background: var(--bg);
+    color: var(--w);
+  }
 }
