@@ -41,6 +41,9 @@
   font-size: 18px;
   font-weight: 700;
   color: var(--w);
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
 }
 .header__nav-list {
   display: flex;
@@ -76,4 +79,25 @@
 }
 .header__nav-list-item_link:hover::after {
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .header__nav-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__nav {
+    padding-top: 20px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .header__nav-list-item_link {
+    padding: 20px 6px;
+  }
+  .header__nav-list {
+    gap: 10px;
+  }
 }
